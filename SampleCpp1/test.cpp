@@ -7,7 +7,7 @@ namespace SumTests {
 	}
 
 	TEST(SumSolutionTest, Simple) {
-		sum3::SumSolution a;
+		leetcode_3sum::Solution a;
 		vector<int> input = { -1, 0, 1, 2, -1, -4 };
 		vector<vector<int>> output = a.threeSum(input);
 		//[[-1, -1, 2], [-1, 0, 1]]

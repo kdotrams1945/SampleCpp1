@@ -1,8 +1,9 @@
 #pragma once
 #include <vector>
 using namespace std;
-namespace sum3{
-    class SumSolution
+// solving :https://leetcode.com/problems/3sum/description/
+namespace leetcode_3sum{
+    class Solution
     {
     public:
         vector<vector<int>> threeSum(vector<int>& nums) {

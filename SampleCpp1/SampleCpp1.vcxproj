@@ -96,10 +96,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Majority.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="SumSolution.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Majority.cpp" />
+    <ClCompile Include="MajorityTests.cpp" />
     <ClCompile Include="SumSolution.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="pch.cpp">

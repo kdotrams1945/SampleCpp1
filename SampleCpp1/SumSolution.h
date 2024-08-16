@@ -39,6 +39,14 @@ namespace leetcode_3sum{
 
             return triplets;
         }
+
+        vector<int> doSomething(vector<int> x);
+       /* vector<int> doSomething1(vector<int>& x);
+        vector<int> doSomething2(vector<int> *x);
+        vector<int> doSomething3(const vector<int>& x);
+        vector<int> doSomething4(const <int>* x);
+        vector<int>& doSomething5(vector<int>& x);*/
+        
     };
 };
 

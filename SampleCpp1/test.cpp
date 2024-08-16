@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "SumSolution.h"
+#include "Majority.h"
 namespace SumTests {
 	TEST(TestCaseName, TestName) {
 		EXPECT_EQ(1, 1);
@@ -16,4 +17,5 @@ namespace SumTests {
 		vector<vector<int>> unwanted = { {-1, 2, 2},{-1, 0, 1} };
 		EXPECT_NE(unwanted, output);
 	}
+
 }

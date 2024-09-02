@@ -7,26 +7,22 @@ namespace leetcode_majority {
 	class Solution
 	{
 	public:
-		int majorityElement(vector<int>& nums) {
-            stack<int> s;
-            
-            for (int num : nums) {
-                
-                if (s.empty()) {
-                    s.push(num);
-                }
-                else {
-                    
-                    if (s.top() == num) {
-                        s.push(num);
-                    }
-                    else {
-                        s.pop();
-                    }
+        int majorityElement(vector<int>& nums) {
+            map<int, int> counter;
+            for (int i = 0; i < nums.size(); i++) {
+                counter[nums[i]]++;
+            }
+            int majority = nums[0];
+            int maxCount = 0;
+            for (auto it = counter.begin(); it != counter.end(); ++it) {
+                if (it->second > maxCount) {
+                    maxCount = it->second;
+                    majority = it->first;
                 }
             }
-            return s.top();
-		}
+
+            return majority;
+        }
 	};
 };
 

@@ -17,7 +17,7 @@ namespace leetcode_major {
 		int output = b.majorityElement(input);
 		int wantedOutput = 3;
 		EXPECT_EQ(wantedOutput, output);
-		vector<int> input2 = { 2, 2, 1, 1, 1, 2, 2 };
+		vector<int> input2 = { 2, 2, 1, 2, 3,2};
 		int output2 = b.majorityElement(input2);
 		int wantedOutput2 = 2;
 		EXPECT_EQ(wantedOutput2, output2);

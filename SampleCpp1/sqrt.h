@@ -6,29 +6,25 @@ namespace leetcode_sqrt {
             long x = y;
             if (x == 1 || x == 0)
                 return x;
-            auto start = getStart(x);
-            for (long i = start; i <= x; i++) {
-                if (i * i == y)
-                    return i;
-                if (i * i > x)
-                    return i - 1;
-            }
-            return -1;
-        }
-    private:
-        int getStart(long y) {
-            int count = 0;
-            int start = 1;
-            long z = y;
-            while (z > 0) {
-                count++;
-                z = z / 10;
-                if (count > 1 && count % 2 == 1) {
-                    start = start * 10;
+            auto start =1;
+         
+            long end = x;
+            while (start <= end) {
+                long mid = start + ((end - start) / 2);
+                auto result = mid * mid;
+                if (result <=  0) {
+                    // overflow
+                    end = mid - 1;
                 }
+                else if (result > x)
+                    end = mid - 1;
+                else if (result == x)
+                    return mid;
+                else
+                    start = mid + 1;
             }
-            return start;
-
+            return end;
         }
+    
     };
 }

@@ -8,6 +8,14 @@ namespace leetcode_sqrt {
 		EXPECT_EQ(3, a);
 
 	}
+
+
+	TEST(SquareRootTest, Thousend) {
+		leetcode_sqrt::Solution b;
+		int a = b.mySqrt(1000);
+		EXPECT_EQ(31, a);
+
+	}
 	TEST(SquareRootTest, LittleAbove) {
 		leetcode_sqrt::Solution b;
 		int a = b.mySqrt(10);

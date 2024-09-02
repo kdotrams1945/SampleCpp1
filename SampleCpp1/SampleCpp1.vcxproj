@@ -96,6 +96,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Intersection.h" />
     <ClInclude Include="Majority.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="sqrt.h" />

@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 using namespace std;
 namespace leetcode_intersection {
     class Solution {
